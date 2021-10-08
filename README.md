@@ -24,15 +24,17 @@ message, store it in a localStorage and display it to the intended client.
 ## Setup
 
 Project dependencies:
-install ws (npm install ws) already installed.
-install express (npm install express) already installed.
+-install node.js.
+-you need js package manager.
+-install ws (npm install ws) already installed.
+-install express (npm install express) already installed.
 To start:
-Open cmd.
-The server & its dependencies are located in /server folder.
-Navigate to Server directory: cd server.
-Run the server: node server.js
-You should get Server is listening on 8080!
-open client on index.html on the browser . 
+-Open cmd.
+-The server & its dependencies are located in /server folder.
+-Navigate to Server directory: cd server.
+-Run the server: node server.js
+-You should get Server is listening on 8080!
+-Open client on index.html on the browser . 
 
 
 ## Contact
