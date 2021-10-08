@@ -6,7 +6,6 @@ message, store it in a localStorage and display it to the intended client.
 * [Technologies Used](#technologies-used)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
-* [Usage](#usage)
 * [Contact](#contact)
 <!-- * [License](#license) -->
 
