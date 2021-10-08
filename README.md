@@ -33,9 +33,6 @@ message, store it in a localStorage and display it to the intended client.
 - Navigate to Server directory: cd server.
 - Run the server: node server.js
 - You should get Server is listening on 8080!
-- To start:
-- Open cmd.
-- The server & its dependencies are located in /server folder.
 - open client on index.html on the browser.
 
 
