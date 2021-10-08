@@ -3,21 +3,12 @@ Technical Assessment of building simple chatting application
 > Technical Assessment about developing a simple nodeJS web socket server, the server receive a
 message, store it in a localStorage and display it to the intended client.
 ## Table of Contents
-* [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Usage](#usage)
 * [Contact](#contact)
 <!-- * [License](#license) -->
-
-
-## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
 ## Technologies Used
