@@ -1,0 +1,83 @@
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <style>
+    .boxed {
+        width: 50%;
+        height: 50%;
+        background-color: #f5f5f5;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+    <pre class="boxed" id="chatWindow" ></pre>
+
+    <input placeholder="Username" className="form-control" id="username" style="width: 50%; height: 50px;margin-top: 10px">
+    <input placeholder="Type your message here" className="form-control" id="message" style="width: 50%; height: 50px;margin-top: 10px">
+    <button className="btn btn-success" id="sendMessage" style="width: 50%; height: 50px;margin-top: 10px">Send</button>
+
+    <button className="btn btn-danger" id="clear" style="width: 50%; height: 50px; margin-top: 10px">Clear Storage </button>
+</div>
+</body>
+
+</html>
+<script>
+    $('#sendMessage').on('click', function () {
+        var chatWindow = $("#chatWindow");
+        // Get all values now.
+        var msg = $('#message').val();
+        var username = $('#username').val();
+        var time = new Date();
+        if (!localStorage) {
+            console.log('localStorage is not supported.');
+
+        } else {
+            // Retreive previous messages
+            var messageArray = localStorage.getItem('message');
+        }
+        console.log(messageArray);
+        if (JSON.stringify(messageArray) == "null") {
+            console.log(JSON.stringify(messageArray));
+            messageArray = [];
+
+            // If there was, get them back from string to an array of objects.
+        } else {
+            messageArray = JSON.parse(messageArray);
+        }
+        // Set the new message object.
+        var newMsg = {
+            msg: msg,
+            time: time,
+            username: username
+        }
+        // Insert the new message object in the array.
+        messageArray.push(newMsg);
+
+        // Save the array as a string.
+        var messagesStringified = JSON.stringify(messageArray);
+        localStorage.setItem('message', messagesStringified);
+        var cMsg = localStorage.getItem('message');
+// Empty chatWindow
+        chatWindow.empty();
+
+        // Loop through the messages.
+        var allMessages = JSON.parse(cMsg);
+
+        for (i = 0; i < allMessages.length; i++) {
+            chatWindow.append("<div>" +
+                allMessages[i].time +
+                " | " + allMessages[i].username +
+                " : " + allMessages[i].msg + "</div>");
+        }
+        console.log(JSON.stringify(messageArray));
+
+
+    });
+</script>
+
