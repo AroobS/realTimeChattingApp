@@ -1,2 +1,51 @@
 # realTimeChattingApp
 Technical Assessment of building simple chatting application
+> Technical Assessment about developing a simple nodeJS web socket server, the server receive a
+message, store it in a localStorage and display it to the intended client.
+> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Contact](#contact)
+<!-- * [License](#license) -->
+
+
+## General Information
+- Provide general information about your project here.
+- What problem does it (intend to) solve?
+- What is the purpose of your project?
+- Why did you undertake it?
+<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+
+
+## Technologies Used
+- Tech 1 -  HTML, CSS, Jquery, Bootstrap and Javascript.
+- Tech 2 - nodeJS web socket server.
+
+
+## Screenshots
+![Example screenshot](./img/screenshot.png)
+<!-- If you have screenshots you'd like to share, include them here. -->
+
+
+## Setup
+
+Project dependencies:
+install ws (npm install ws) already installed.
+install express (npm install express) already installed.
+To start:
+Open cmd.
+The server & its dependencies are located in /server folder.
+Navigate to Server directory: cd server.
+Run the server: node server.js
+You should get Server is listening on 8080!
+open client on index.html on the browser . 
+
+
+## Contact
+Created by Aroob Sanad- feel free to contact me aroobsanad@gmail.com
+
