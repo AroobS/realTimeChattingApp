@@ -2,8 +2,6 @@
 Technical Assessment of building simple chatting application
 > Technical Assessment about developing a simple nodeJS web socket server, the server receive a
 message, store it in a localStorage and display it to the intended client.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
-
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
