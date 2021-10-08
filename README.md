@@ -16,7 +16,7 @@ message, store it in a localStorage and display it to the intended client.
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+(./img/screenshot.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
